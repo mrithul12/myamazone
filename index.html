@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mzon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md text-nowrap align-items-center">
+    <div class="container-fluid align-items-center">
+
+      <div class="amazon-logo d-flex gap-2 p-1 justify-content-between">
+        <div class="select-bar d-lg-none">
+          <a href="#"><i class="fa-solid fa-bars"></i> </a>
+        </div>
+        <!-- <a href="#"><img class="logo" src="/image/logo-1.png" alt=""></a> -->
+         <span><b>MZONE</b></span>
+
+      </div>
+      <div class="navbar-icons d-sm-none d-flex gap-2">
+        <span><i class="fa-regular fa-user"></i></span> 
+        <span><i class="fa-solid fa-cart-shopping"></i></span>
+      </div>
+      <div class="location d-md-flex d-none align-items-center p-1">
+        <div class="location-mark d-flex align-items-end pe-1">
+          <span> <i class="fa-solid fa-location-dot"></i></span>
+        </div>
+        <div class="d-grid location-address">
+          <span class="location-line-1"> Delivery to India</span>
+          <span class="location-line-2">Update location</span>
+        </div>
+      </div>
+      <div class="input-group align-items-center px-md-2 ">
+        <button class="input-group-btn-1 " type="button" id="button-addon1">All</button>
+        <input type="text" class="form-control" placeholder="botile" aria-label="Example text with button addon"
+          aria-describedby="button-addon1">
+        <button class="input-group-btn-2 " type="button" id="button-addon1"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="country d-flex p-2 d-md-flex d-none">
+        <div class="country-logo">
+          <img class="india-logo" src="/image/india.jpg" alt="" />
+        </div>
+        <div class="country-language">
+          <span class="select-language">EN</span>
+        </div>
+        <div class="country-icon">
+          <span class="country-drop-icon align-items-end"><i class="fa-solid fa-angle-down"></i></span>
+        </div>
+      </div>
+      <div class="login p-1 d-md-grid d-none">
+        <span class="login-line-1">Hello, sign in</span>
+        <span class="login-line-2">Acount & List <i class="fa-solid fa-angle-down"></i></span>
+      </div>
+      <div class="return p-1 d-md-grid d-none">
+        <span class="return-line-1">Return</span>
+        <span class="return-line-2">&Orders</span>
+      </div>
+      <div class="cart align-items-end p-1 d-md-flex d-none">
+        <div class="cart-logo">
+          <img src="/image/cart.png" alt="" />
+        </div>
+        <div class="cart-line">
+          <span class="cart-img">Cart</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <nav class="navbar-list navbar-expand-md text-nowrap ">
+    <div class="container-fluid d-flex justify-content-star">
+
+      <ul class="list d-md-flex d-none list-unstyled m-0 py-2">
+        <li class="nav-list-1 "><a href="#"><i class="fa-solid fa-bars"></i> All</a></li>
+        <li class="nav-list-2 "><a href="#">Amazon miniTV</a></li>
+        <li class="nav-list-3 "><a href="#">Sell</a></li>
+        <li class="nav-list-4 "><a href="#">Best Sellers</a></li>
+        <li class="nav-list-5 "><a href="#">Todays Deals</a></li>
+        <li class="nav-list-6 "><a href="#">Mobiles</a></li>
+        <li class="nav-list-7 "><a href="#">Prime</a></li>
+        <li class="nav-list-8 "><a href="#">Electronics</a></li>
+        <li class="nav-list-9 "><a href="#">Costomer Service</a></li>
+        <li class="nav-list-10 "><a href="#">New Releases</a></li>
+        <li class="nav-list-11 "><a href="#">Home & Kitchen</a></li>
+        <li class="nav-list-12 "><a href="#">AmazonePay</a></li>
+        <li class="nav-list-13 "><a href="#">Fasion</a></li>
+      </ul>
+
+
+
+
+    </div>
+
+  </nav>
+
+
+  <header class="header-list text-nowrap d-flex p-3 m-0 align-items-center">
+    <div class="home m-0">
+      <span>Amazon Home</span>
+    </div>
+    <div class="header-list-items overflow-x-scroll">
+      <ul class="d-flex list-unstyled justify-content-center text-nowrap m-0">
+        <li><a href="#">Kitchen and Home Appliences</a></li>
+        <li><a href="#">Large Appliences</a></li>
+        <li><a href="#">Kitchen and Dining</a></li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Home furnishing</a></li>
+        <li><a href="#">Home Decore</a></li>
+        <li><a href="#">Home improvement</a></li>
+        <li><a href="#">Garden and Outdoor</a></li>
+        <li><a href="#">Storage and orgaisation</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+
+  <section class="nav-list-filter d-none d-sm-flex justify-content-between p-2 text-nowrap">
+    <div class="d-flex">
+      <span>1-24 of over 60,000 results for </span>
+      <span style="color: rgb(249, 129, 8); font-weight: bold">"bottile"</span>
+    </div>
+
+    <div class="feutred">
+      <span>sort by: featured <i class="fa-solid fa-angle-down"></i></span>
+    </div>
+  </section>
+
+  <main class="container-fluid text-nowrap mt-4">
+    <div class="d-flex justify-content-center">
+
+      <aside class="container-left col-2 d-none d-lg-block">
+        <h6>Delivery Day</h6>
+        <div class="checkbox d-flex align-content-center">
+          <input type="checkbox" name="#" id="" />
+          <label for="">Get it by Tommorow</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="#" id="" />
+          <label for="">Get it in Two Days</label>
+        </div>
+        <div class="review mt-1">
+          <h6>Costomer Review</h6>
+
+          <ul class="d-flex list-unstyled mt-1">
+            <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+            <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+            <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+          </ul>
+
+        </div>
+        <div class="meterial ">
+          <h6>Metrial</h6>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Aluminum</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Glas</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Plastic</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Stainless Steel</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Polister</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Polithine</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Silicone</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" />
+            <label for="">Borocilicate Glass</label>
+          </div>
+          <div class="discount d-grid m-0 pt-2">
+            <h6>Discount</h6>
+            <ul class="list-unstyled">
+              <li><a href="">10% Off or more</a></li>
+              <li><a href="">20% Off or more</a></li>
+              <li><a href="">50% Off or more</a></li>
+              <li><a href="">70% Off or more</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+
+
+
+
+
+
+
+
+      <section class="col-10 ">
+        <div class="product-logo d-none d-md-flex">
+          <div class="p-logo col-1">
+            <img src="/image/boldfit.jpg" class="img-fluid" alt="" />
+          </div>
+
+          <div class="p-content d-grid m-0 ps-3 col-11">
+            <span class="fw-bold text-wrap">Leakeproof tumbler for on-the-go hydration</span>
+            <a class="text-decoration-none" href="#">Shop Boldfit</a>
+          </div>
+        </div>
+        <div class="product-items mt-3 ">
+          <div class="cards row gap-2 flex-nowrap">
+
+
+            <div
+              class="product-box-ad col-xl-5 col-xxl-4 col-lg-5 col-md-6 d-none d-md-block  d-flex justify-content-center">
+              <img src="/image/9034698e-38a1-413a-a205-d0f9fa857d33._CR0,0,1200,628_SX507_QL70_.jpg" class="img-fluid"
+                alt="">
+            </div>
+
+
+            <div class="product-box d-flex flex-column col-lg-2 col-md-2 col-sm-3 col-4 p-1 ">
+              <div class="box-img d-flex justify-content-center">
+                <img src="/image/bluebottle.jpg" class="img-fluid cello" alt="">
+              </div>
+
+              <div class="deal">
+                <a href="#">Limited Time Deal</a>
+              </div>
+              <div class="star-review">
+                <ul class="d-flex list-unstyled m-0">
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                </ul>
+              </div>
+              <div class="product-name d-flex align-items-center">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+
+                <h6 class="m-0">799</h6>
+
+
+                <img src="/image/prime-logoo.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="true-price d-flex align-items-center">
+                <div class="rupee-true">
+                  <span><i class="fa-solid fa-indian-rupee-sign"></i>899</span>
+                </div>
+                <div class="offer">
+                  <span>(10%offer)</span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="product-box d-flex flex-column col-lg-2 col-md-2 col-sm-3 col-4 p-1 ">
+              <div class="box-img d-flex justify-content-center">
+                <img src="/image/fl-bottle.jpg" class="cello img-fluid" alt="">
+              </div>
+              <div class="deal">
+                <a href="#">Limited Time Deal</a>
+              </div>
+              <div class="star-review">
+                <ul class="d-flex list-unstyled m-0">
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                </ul>
+              </div>
+              <div class="product-name d-flex align-items-center">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+
+                <h6 class="m-0">739</h6>
+
+
+                <img src="/image/prime-logoo.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="true-price d-flex align-items-center">
+                <div class="rupee-true">
+                  <span><i class="fa-solid fa-indian-rupee-sign"></i>899</span>
+                </div>
+                <div class="offer">
+                  <span>(8%offer)</span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="product-box d-flex flex-column col-lg-2 col-md-2 col-sm-3 col-4 p-1 ">
+              <div class="box-img d-flex justify-content-center">
+                <img src="/image/skybottle.jpg" class="cello img-fluid" alt="">
+              </div>
+              <div class="deal">
+                <a href="#">Limited Time Deal</a>
+              </div>
+              <div class="star-review">
+                <ul class="d-flex list-unstyled m-0">
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                </ul>
+              </div>
+              <div class="product-name d-flex align-items-center">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+
+                <h6 class="m-0">739</h6>
+
+
+                <img src="/image/prime-logoo.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="true-price d-flex align-items-center">
+                <div class="rupee-true">
+                  <span><i class="fa-solid fa-indian-rupee-sign"></i>899</span>
+                </div>
+                <div class="offer">
+                  <span>(8%offer)</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product-box d-none d-sm-block d-lg-none d-md-none col-lg-2 col-md-2 col-sm-3 col-4 p-1 ">
+              <div class="box-img d-flex justify-content-center">
+                <img src="/image/skybottle.jpg" class="cello img-fluid" alt="">
+              </div>
+              <div class="deal">
+                <a href="#">Limited Time Deal</a>
+              </div>
+              <div class="star-review">
+                <ul class="d-flex list-unstyled m-0">
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                  <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                </ul>
+              </div>
+              <div class="product-name d-flex align-items-center">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+
+                <h6 class="m-0">739</h6>
+
+
+                <img src="/image/prime-logoo.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="true-price d-flex align-items-center">
+                <div class="rupee-true">
+                  <span><i class="fa-solid fa-indian-rupee-sign"></i>899</span>
+                </div>
+                <div class="offer">
+                  <span>(8%offer)</span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+
+        <div class="content mt-3">
+          <p class="m-0">Showing products with fast delivery</p>
+          <h4><b>Show Result</b></h4>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="all-items mt-3">
+
+          <div class="hero d-flex gap-2 w-100 flex-wrap">
+
+          
+            <div class="box-items d-flex d-sm-grid  justify-content-center  p-2 ">
+              <div class="image d-flex justify-content-center ">
+                <img src="/image/boldfit-water.webp" class="img-fluid card-img" alt="" />
+              </div>
+              <div class="">
+                <div class="sponsered">
+                  <span>sponsored</span>
+                </div>
+                <div class="product-details">
+                  <p class="m-0">
+                    Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+                    bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+                  </p>
+                </div>
+
+                <div class="star-review">
+                  <ul class="d-flex list-unstyled m-0">
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                  </ul>
+                </div>
+                <div class="sales">
+                  <p class="m-0">500+ bought in past month</p>
+                </div>
+
+                <div class="price d-flex align-items-center p-0 m-0">
+                  <div class="d-flex">
+                    <div class="price-logo d-flex align-items-center">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <div class="price-amount">
+                      <p class="m-0">499</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mrp">
+                    <div class="price-mrp">
+                      <p class="m-0">MRP:</p>
+                    </div>
+                    <div class="price-amount-1">
+                      <p class="m-0">545</p>
+                    </div>
+                  </div>
+                  <div class="price-offer">
+                    <p class="m-0">(8% offer)</p>
+                  </div>
+
+
+
+                </div>
+                <div class="p-logo">
+                  <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+                </div>
+
+                <div class="button">
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+            <div class="box-items d-flex d-sm-grid  justify-content-center   p-2 ">
+              <div class="image d-flex justify-content-center ">
+                <img src="/image/pdt-1.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <div class="">
+                <div class="sponsered">
+                  <span>sponsored</span>
+                </div>
+                <div class="product-details">
+                  <p class="m-0">
+                    Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+                    bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+                  </p>
+                </div>
+
+                <div class="star-review">
+                  <ul class="d-flex list-unstyled m-0">
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                  </ul>
+                </div>
+                <div class="sales">
+                  <p class="m-0">500+ bought in past month</p>
+                </div>
+
+                <div class="price d-flex align-items-center p-0 m-0">
+                  <div class="d-flex">
+                    <div class="price-logo d-flex align-items-center">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <div class="price-amount">
+                      <p class="m-0">599</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mrp">
+                    <div class="price-mrp">
+                      <p class="m-0">MRP:</p>
+                    </div>
+                    <div class="price-amount-1">
+                      <p class="m-0">799</p>
+                    </div>
+                  </div>
+                  <div class="price-offer">
+                    <p class="m-0">(20% offer)</p>
+                  </div>
+
+
+
+                </div>
+                <div class="p-logo">
+                  <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+                </div>
+
+                <div class="button">
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="box-items d-flex d-sm-grid  justify-content-center  p-2">
+              <div class="image d-flex justify-content-center ">
+                <img src="/image/pdt-2.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <div class="">
+                <div class="sponsered">
+                  <span>sponsored</span>
+                </div>
+                <div class="product-details">
+                  <p class="m-0">
+                    Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+                    bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+                  </p>
+                </div>
+
+                <div class="star-review">
+                  <ul class="d-flex list-unstyled m-0">
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                  </ul>
+                </div>
+                <div class="sales">
+                  <p class="m-0">500+ bought in past month</p>
+                </div>
+
+                <div class="price d-flex align-items-center p-0 m-0">
+                  <div class="d-flex">
+                    <div class="price-logo d-flex align-items-center">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <div class="price-amount">
+                      <p class="m-0">1049</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mrp">
+                    <div class="price-mrp">
+                      <p class="m-0">MRP:</p>
+                    </div>
+                    <div class="price-amount-1">
+                      <p class="m-0">1199</p>
+                    </div>
+                  </div>
+                  <div class="price-offer">
+                    <p class="m-0">(10% offer)</p>
+                  </div>
+
+
+
+                </div>
+                <div class="p-logo">
+                  <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+                </div>
+
+                <div class="button">
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-items d-flex d-sm-grid  justify-content-center  p-2">
+              <div class="image d-flex justify-content-center ">
+                <img src="/image/pdt4.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <div class="">
+                <div class="sponsered">
+                  <span>sponsored</span>
+                </div>
+                <div class="product-details">
+                  <p class="m-0">
+                    Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+                    bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+                  </p>
+                </div>
+
+                <div class="star-review">
+                  <ul class="d-flex list-unstyled m-0">
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                  </ul>
+                </div>
+                <div class="sales">
+                  <p class="m-0">500+ bought in past month</p>
+                </div>
+
+                <div class="price d-flex align-items-center p-0 m-0">
+                  <div class="d-flex">
+                    <div class="price-logo d-flex align-items-center">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <div class="price-amount">
+                      <p class="m-0">399</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mrp">
+                    <div class="price-mrp">
+                      <p class="m-0">MRP:</p>
+                    </div>
+                    <div class="price-amount-1">
+                      <p class="m-0">499</p>
+                    </div>
+                  </div>
+                  <div class="price-offer">
+                    <p class="m-0">(5% offer)</p>
+                  </div>
+
+
+
+                </div>
+                <div class="p-logo">
+                  <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+                </div>
+
+                <div class="button">
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-items d-flex d-sm-grid  justify-content-center  p-2 ">
+              <div class="image d-flex justify-content-center  ">
+                <img src="/image/pdt5.jpg" class="img-fluid card-img" alt="" />
+              </div>
+              <div class="hero-1">
+                <div class="sponsered">
+                  <span>sponsored</span>
+                </div>
+                <div class="product-details">
+                  <p class="m-0">
+                    Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+                    bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+                  </p>
+                </div>
+
+                <div class="star-review">
+                  <ul class="d-flex list-unstyled m-0">
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+                    <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+                  </ul>
+                </div>
+                <div class="sales">
+                  <p class="m-0">500+ bought in past month</p>
+                </div>
+
+                <div class="price d-flex align-items-center p-0 m-0">
+                  <div class="d-flex">
+                    <div class="price-logo d-flex align-items-center">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+
+                    <div class="price-amount">
+                      <p class="m-0">999</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mrp">
+                    <div class="price-mrp">
+                      <p class="m-0">MRP:</p>
+                    </div>
+                    <div class="price-amount-1">
+                      <p class="m-0">1299</p>
+                    </div>
+                  </div>
+                  <div class="price-offer">
+                    <p class="m-0">(20% offer)</p>
+                  </div>
+
+
+
+                </div>
+                <div class="p-logo">
+                  <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+                </div>
+
+                <div class="button">
+                  <button class="add-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+              
+        <div class="box-items d-flex d-sm-grid  justify-content-center p-2">
+          <div class="image d-flex justify-content-center  ">
+            <img src="/image/pdt6.jpg" class="img-fluid card-img" alt="" />
+          </div>
+          <div class="hero-1">
+         <div class="sponsered">
+          <span>sponsored</span>
+         </div>
+         <div class="product-details">
+          <p class="m-0">
+            Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+            bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+          </p>
+         </div>
+       
+          <div class="star-review">
+            <ul class="d-flex list-unstyled m-0">
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+            </ul>
+          </div>
+          <div class="sales">
+            <p class="m-0">500+ bought in past month</p>
+          </div>
+          
+          <div class="price d-flex align-items-center p-0 m-0">
+            <div class="d-flex">
+            <div class="price-logo d-flex align-items-center">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+          
+            <div class="price-amount">
+            <p class="m-0">899</p>
+            </div>
+            </div>
+            <div class="d-flex mrp">
+              <div class="price-mrp">
+                <p class="m-0">MRP:</p>
+              </div>
+              <div class="price-amount-1">
+                <p class="m-0">799</p>
+              </div>
+            </div>
+            <div class="price-offer">
+              <p class="m-0">(8% offer)</p>
+            </div>
+            
+          
+            
+          </div>
+          <div class="p-logo">
+            <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+          </div>
+          
+          <div class="button">
+            <button class="add-cart">Add to cart</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="box-items d-flex d-sm-grid  justify-content-center p-2 ">
+          <div class="image d-flex justify-content-center  ">
+            <img src="/image/pdt7.jpg" class="img-fluid card-img" alt="" />
+          </div>
+          <div class="hero-1">
+         <div class="sponsered">
+          <span>sponsored</span>
+         </div>
+         <div class="product-details">
+          <p class="m-0">
+            Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+            bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+          </p>
+         </div>
+       
+          <div class="star-review">
+            <ul class="d-flex list-unstyled m-0">
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+            </ul>
+          </div>
+          <div class="sales">
+            <p class="m-0">500+ bought in past month</p>
+          </div>
+          
+          <div class="price d-flex align-items-center p-0 m-0">
+            <div class="d-flex">
+            <div class="price-logo d-flex align-items-center">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+          
+            <div class="price-amount">
+            <p class="m-0">599</p>
+            </div>
+            </div>
+            <div class="d-flex mrp">
+              <div class="price-mrp">
+                <p class="m-0">MRP:</p>
+              </div>
+              <div class="price-amount-1">
+                <p class="m-0">649</p>
+              </div>
+            </div>
+            <div class="price-offer">
+              <p class="m-0">(8% offer)</p>
+            </div>
+            
+          
+            
+          </div>
+          <div class="p-logo">
+            <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+          </div>
+          
+          <div class="button">
+            <button class="add-cart">Add to cart</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="box-items d-flex d-sm-grid  justify-content-center  p-2 ">
+          <div class="image d-flex justify-content-center  ">
+            <img src="/image/pdt8.jpg" class="img-fluid card-img" alt="" />
+          </div>
+          <div class="hero-1">
+         <div class="sponsered">
+          <span>sponsored</span>
+         </div>
+         <div class="product-details">
+          <p class="m-0">
+            Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+            bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+          </p>
+         </div>
+       
+          <div class="star-review">
+            <ul class="d-flex list-unstyled m-0">
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+            </ul>
+          </div>
+          <div class="sales">
+            <p class="m-0">100+ bought in past month</p>
+          </div>
+          
+          <div class="price d-flex align-items-center p-0 m-0">
+            <div class="d-flex">
+            <div class="price-logo d-flex align-items-center">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+          
+            <div class="price-amount">
+            <p class="m-0">449</p>
+            </div>
+            </div>
+            <div class="d-flex mrp">
+              <div class="price-mrp">
+                <p class="m-0">MRP:</p>
+              </div>
+              <div class="price-amount-1">
+                <p class="m-0">545</p>
+              </div>
+            </div>
+            <div class="price-offer">
+              <p class="m-0">(8% offer)</p>
+            </div>
+            
+          
+            
+          </div>
+          <div class="p-logo">
+            <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+          </div>
+          
+          <div class="button">
+            <button class="add-cart">Add to cart</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="box-items d-flex d-sm-grid  justify-content-center  p-2 ">
+          <div class="image d-flex justify-content-center  ">
+            <img src="/image/pdt9.jpg" class="img-fluid card-img" alt="" />
+          </div>
+          <div class="hero-1">
+         <div class="sponsered">
+          <span>sponsored</span>
+         </div>
+         <div class="product-details">
+          <p class="m-0">
+            Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+            bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+          </p>
+         </div>
+       
+          <div class="star-review">
+            <ul class="d-flex list-unstyled m-0">
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+            </ul>
+          </div>
+          <div class="sales">
+            <p class="m-0">600+ bought in past month</p>
+          </div>
+          
+          <div class="price d-flex align-items-center p-0 m-0">
+            <div class="d-flex">
+            <div class="price-logo d-flex align-items-center">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+          
+            <div class="price-amount">
+            <p class="m-0">1199</p>
+            </div>
+            </div>
+            <div class="d-flex mrp">
+              <div class="price-mrp">
+                <p class="m-0">MRP:</p>
+              </div>
+              <div class="price-amount-1">
+                <p class="m-0">1399</p>
+              </div>
+            </div>
+            <div class="price-offer">
+              <p class="m-0">(15% offer)</p>
+            </div>
+            
+          
+            
+          </div>
+          <div class="p-logo">
+            <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+          </div>
+          
+          <div class="button">
+            <button class="add-cart">Add to cart</button>
+          </div>
+          </div>
+        </div>
+
+        <div class="box-items d-flex d-sm-grid  justify-content-center p-2 ">
+          <div class="image d-flex justify-content-center  ">
+            <img src="/image/pdt10.jpg" class="img-fluid card-img" alt="" />
+          </div>
+          <div class="hero-1">
+         <div class="sponsered">
+          <span>sponsored</span>
+         </div>
+         <div class="product-details">
+          <p class="m-0">
+            Pigeon Inox Hydra Duo, Dual Cap, Flipper Cap and Fridge Cap in one
+            bottle, Easy to use, Multipurpose all in one bottle 900ml, Black
+          </p>
+         </div>
+       
+          <div class="star-review">
+            <ul class="d-flex list-unstyled m-0">
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-solid fa-star" style="color: #FFD43B;"></i></li>
+              <li><i class="fa-regular fa-star" style="color: #FFD43B;"></i></li>
+            </ul>
+          </div>
+          <div class="sales">
+            <p class="m-0">500+ bought in past month</p>
+          </div>
+          
+          <div class="price d-flex align-items-center p-0 m-0">
+            <div class="d-flex">
+            <div class="price-logo d-flex align-items-center">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+          
+            <div class="price-amount">
+            <p class="m-0">1599</p>
+            </div>
+            </div>
+            <div class="d-flex mrp">
+              <div class="price-mrp">
+                <p class="m-0">MRP:</p>
+              </div>
+              <div class="price-amount-1">
+                <p class="m-0">1999</p>
+              </div>
+            </div>
+            <div class="price-offer">
+              <p class="m-0">(10% offer)</p>
+            </div>
+            
+          
+            
+          </div>
+          <div class="p-logo">
+            <img class="prime p-0" src="/image/prime-logoo.png" alt="">
+          </div>
+          
+          <div class="button">
+            <button class="add-cart">Add to cart</button>
+          </div>
+          </div>
+        </div>
+
+
+          </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+    </section>
+    </div>
+  </main>
+  
+
+  <section>
+    <div class="container-fluid py-5">
+      <div class="footer-info d-grid justify-content-center ">
+        <div class="footer-para">
+          <h2>See Personalized recommendation</h2>
+        </div>
+        <div class="footer-btn text-center">
+          <button class="sign-btn" type="submit">Sign in</button>
+        </div>
+        <div class="footer-new text-center">
+          <a href="#">New customer?Start here.</a>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  
+
+  <section>
+    <div class="back-to-top">
+      <p class="m-0">Back to top</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid d-flex gap-5 justify-content-center">
+       <div class="footer-list ">
+        <h1>Get to know as</h1>
+        <ul>
+          <li>about amazon</li>
+          <li>careers</li>
+          <li>press Releses</li>
+          <li>Amazone Science</li>
+        </ul>
+       </div>
+
+       <div class="footer-list">
+        <h1>Connect With Us</h1>
+        <ul>
+          <li>face Book</li>
+          <li>Instagram</li>
+          <li>Twiter</li>
+          
+        </ul>
+       </div>
+       <div class="footer-list">
+        <h1>Make money With us</h1>
+        <ul>
+          <li>Sell on Amazon</li>
+          <li>Seller Under Amazon</li>
+          <li>Amazon Pay on Merchants</li>
+          <li>Supply to Amazon</li>
+          <li>Become an Affiliate</li>
+        </ul>
+       </div>
+       <div class="footer-list">
+        <h1>	
+          Let Us Help You</h1>
+        <ul>
+          <li>Your Account</li>
+          <li>Returns Centre</li>
+          <li>mzon App Download</li>
+          <li>Help</li>
+          
+        </ul>
+       </div>
+    </div>
+  </footer>
+<hr class="m-0">
+  <footer>
+    <div class="footer-2 d-grid justify-content-center">
+      <div class="copy-issue">
+        <span>Conditions of Use & Sale
+          Privacy Notice
+          Interest-Based Ads</span>
+      </div>
+    <div class="copy-right text-center">
+      <span>© 1996-2025, mzon.com, Inc. or its affiliates</span>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3640d8948f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
